@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Murs en Poésies à St Bo — Liberté·s</title>
+<meta name="description" content="27-29 mars 2026 · Saint-Bauzille-de-Putois · Quand les murs parlent, les rues écoutent. Festival de poésie en plein air.">
+<meta name="theme-color" content="#0a333a">
+<meta property="og:title" content="Murs en Poésies à St Bo — Liberté·s">
+<meta property="og:description" content="27-29 mars 2026 · Saint-Bauzille-de-Putois · Quand les murs parlent, les rues écoutent.">
+<meta property="og:image" content="https://projectpulse-source.github.io/mursenpoesies/images/og-share.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://projectpulse-source.github.io/mursenpoesies/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+
+<!-- Favicon SVG (plume) -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🪶</text></svg>">
+
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "name": "Murs en Poésies à St Bo — Liberté·s",
+  "description": "Festival de poésie en plein air. Quand les murs parlent, les rues écoutent.",
+  "startDate": "2026-03-27",
+  "endDate": "2026-03-29",
+  "eventStatus": "https://schema.org/EventScheduled",
+  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+  "location": {
+    "@type": "Place",
+    "name": "Saint-Bauzille-de-Putois",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Saint-Bauzille-de-Putois",
+      "addressRegion": "Occitanie",
+      "addressCountry": "FR"
+    }
+  },
+  "organizer": [
+    { "@type": "Organization", "name": "La Pensée Vagabonde" },
+    { "@type": "Organization", "name": "Capteur de Talents" }
+  ],
+  "image": "https://projectpulse-source.github.io/mursenpoesies/images/og-share.jpg",
+  "url": "https://projectpulse-source.github.io/mursenpoesies/"
+}
+</script>
+
+<link rel="preload" as="image" type="image/webp" imagesrcset="images/hero-mur-480.webp 480w, images/hero-mur-800.webp 800w, images/hero-mur.webp 1204w" imagesizes="100vw">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bordeaux: #6b1d3a;
+  --rouge: #c41010;
+  --teal: #0d4a50;
+  --teal-clair: #166d78;
+  --vert-pomme: #e8f5d4;
+  --creme: #f5eddc;
+  --brun: #3a2e24;
+  --blanc: #ffffff;
+  --teal-fonce: #0a333a;
+  --creme-clair: #faf7f0;
+  --font-display: 'Amatic SC', cursive;
+  --font-serif: 'Playfair Display', serif;
+  --font-body: 'Source Sans 3', sans-serif;
+  --header-h: 52px;
+}
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: var(--header-h); }
+body {
+  font-family: var(--font-body);
+  color: var(--brun);
+  background: var(--creme-clair);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+img { max-width: 100%; height: auto; display: block; }
+picture { display: block; width: 100%; line-height: 0; }
+picture > img { width: 100%; }
+a { color: var(--teal-clair); text-decoration: none; }
+a:hover, a:focus { text-decoration: underline; }
+a:focus-visible { outline: 2px solid var(--teal-clair); outline-offset: 2px; }
+
+/* === Header === */
+.site-header {
+  position: sticky; top: 0; z-index: 100;
+  background: var(--teal-fonce);
+  height: var(--header-h);
+  display: flex; align-items: center; justify-content: center;
+  gap: 0.25rem; padding: 0 0.75rem;
+  box-shadow: 0 2px 8px rgba(10,51,58,0.3);
+}
+.site-header a {
+  color: var(--creme-clair); font-family: var(--font-body);
+  font-weight: 600; font-size: 0.8rem;
+  padding: 0.4rem 0.6rem; border-radius: 4px;
+  transition: background 0.2s, opacity 0.2s; text-decoration: none; white-space: nowrap;
+  opacity: 0.7;
+}
+.site-header a:hover, .site-header a:focus { background: rgba(255,255,255,0.12); text-decoration: none; opacity: 1; }
+.site-header a.active { opacity: 1; background: rgba(255,255,255,0.1); }
+.header-sep { color: rgba(255,255,255,0.3); font-size: 0.7rem; user-select: none; }
+
+/* === Section separator === */
+.section-sep {
+  display: block; text-align: center; padding: 0; line-height: 0;
+  font-size: 1.4rem; letter-spacing: 0.5em; color: var(--teal-clair); opacity: 0.4;
+  user-select: none;
+}
+.section-sep.on-dark { color: #7dd3c0; }
+
+/* === Hero === */
+.hero {
+  position: relative; width: 100%; min-height: 60vh;
+  display: flex; flex-direction: column; justify-content: center;
+  align-items: center; text-align: center; overflow: hidden;
+}
+.hero picture { position: absolute; inset: 0; width: 100%; height: 100%; }
+.hero-img {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  object-fit: cover; object-position: center center;
+}
+.hero::after {
+  content: ''; position: absolute; inset: 0;
+  background: linear-gradient(to bottom,
+    rgba(250,247,240,0.35) 0%, rgba(245,237,220,0.6) 30%, rgba(245,237,220,0.85) 100%);
+}
+.hero-content { position: relative; z-index: 2; padding: 2rem 1.25rem; max-width: 600px; }
+.hero-title {
+  font-family: var(--font-display); font-weight: 700; font-size: 3rem;
+  line-height: 0.95; color: var(--teal-fonce); margin-bottom: 0.4rem;
+  text-shadow: 0 2px 8px rgba(250,247,240,0.9);
+}
+.hero-edition {
+  font-family: var(--font-serif); font-style: italic; font-size: 1.35rem;
+  color: var(--bordeaux); margin-bottom: 0.6rem;
+  text-shadow: 0 1px 4px rgba(250,247,240,0.7);
+}
+.hero-tagline {
+  font-family: var(--font-serif); font-style: italic; font-size: 1rem;
+  color: var(--teal); margin-bottom: 1.1rem; line-height: 1.4;
+  text-shadow: 0 1px 4px rgba(250,247,240,0.7);
+}
+.hero-info {
+  display: inline-flex; flex-direction: column; gap: 0.15rem;
+  background: rgba(10,51,58,0.9); color: var(--creme-clair);
+  padding: 0.75rem 1.5rem; border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(10,51,58,0.25);
+}
+.hero-date { font-family: var(--font-body); font-weight: 700; font-size: 1.1rem; letter-spacing: 0.03em; }
+.hero-lieu { font-family: var(--font-body); font-size: 0.9rem; opacity: 0.9; }
+
+/* === Sections === */
+.section { padding: 3rem 1.25rem; }
+.section-inner { max-width: 680px; margin: 0 auto; }
+.jour-label { font-family: var(--font-display); font-weight: 700; font-size: 2.4rem; line-height: 1; margin-bottom: 0.3rem; }
+.horaire-lieu { font-family: var(--font-serif); font-weight: 700; font-size: 1.05rem; margin-bottom: 0.75rem; }
+.section-description { font-size: 1rem; line-height: 1.65; margin-bottom: 0.75rem; }
+.section-detail { font-family: var(--font-serif); font-style: italic; font-size: 0.95rem; opacity: 0.85; margin-top: 0.5rem; }
+
+/* --- Section images: picture = frame, img = fill --- */
+.section picture {
+  position: relative;
+  aspect-ratio: 1204 / 700;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(58,46,36,0.12);
+}
+#expo picture { box-shadow: 0 4px 20px rgba(0,0,0,0.3); }
+.section picture > img.section-img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover; object-position: center;
+  border-radius: 0; box-shadow: none;
+  transform: scale(1.002);
+}
+
+.section-link {
+  display: inline-block; margin-top: 0.75rem; font-weight: 600; font-size: 0.95rem;
+  color: var(--teal-clair); border-bottom: 1px solid currentColor; padding-bottom: 1px;
+}
+.section-link:hover { color: var(--teal); }
+
+/* === Expo === */
+#expo { background: var(--teal-fonce); color: var(--creme-clair); }
+#expo .jour-label { color: var(--blanc); }
+#expo .horaire-lieu { color: #7dd3c0; }
+#expo .section-description { color: var(--creme-clair); }
+
+/* === Vendredi === */
+#ven { background: var(--creme); }
+#ven .jour-label { color: var(--bordeaux); }
+#ven .horaire-lieu { color: var(--teal); }
+.pre-event {
+  background: rgba(13,74,80,0.07); border-left: 3px solid var(--teal-clair);
+  padding: 0.75rem 1rem; border-radius: 0 8px 8px 0; margin-top: 1rem; font-size: 0.9rem;
+}
+.pre-event strong { font-family: var(--font-serif); color: var(--teal); }
+
+/* === Samedi === */
+#sam { background: var(--vert-pomme); }
+#sam .jour-label { color: var(--bordeaux); }
+#sam .horaire-lieu { color: var(--teal); }
+
+/* === Dimanche === */
+#dim { background: var(--creme); }
+#dim .jour-label { color: var(--bordeaux); }
+#dim .horaire-lieu { color: var(--teal); }
+.dim-separator {
+  margin-top: 2.5rem; padding-top: 2rem;
+  border-top: 1px solid rgba(13,74,80,0.12);
+}
+.encart-atelier {
+  background: rgba(13,74,80,0.06);
+  border-left: 3px solid var(--teal-clair);
+  padding: 1rem 1.25rem;
+  border-radius: 0 8px 8px 0;
+  margin-top: 1rem;
+}
+.encart-atelier .horaire-lieu { margin-bottom: 0.5rem; }
+
+/* === Partage === */
+.partage {
+  background: var(--teal-fonce);
+  padding: 2.5rem 1.25rem;
+  text-align: center;
+}
+.partage-title {
+  font-family: var(--font-display); font-weight: 700;
+  font-size: 1.8rem; color: var(--blanc); margin-bottom: 0.4rem;
+}
+.partage-sub {
+  font-family: var(--font-serif); font-style: italic;
+  font-size: 0.9rem; color: #7dd3c0; margin-bottom: 1.25rem;
+}
+.partage-buttons {
+  display: flex; flex-wrap: wrap; justify-content: center;
+  gap: 0.75rem; max-width: 480px; margin: 0 auto;
+}
+.btn-share {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  padding: 0.65rem 1.2rem; border-radius: 6px;
+  font-family: var(--font-body); font-weight: 600; font-size: 0.85rem;
+  cursor: pointer; border: 2px solid rgba(255,255,255,0.25);
+  background: rgba(255,255,255,0.08); color: var(--creme-clair);
+  text-decoration: none;
+  transition: background 0.2s, border-color 0.2s, transform 0.15s;
+}
+.btn-share:hover {
+  background: rgba(255,255,255,0.18);
+  border-color: rgba(255,255,255,0.5);
+  transform: translateY(-1px);
+  text-decoration: none;
+}
+.btn-share:focus-visible {
+  outline: 2px solid #7dd3c0;
+  outline-offset: 2px;
+}
+.btn-share svg { width: 16px; height: 16px; flex-shrink: 0; opacity: 0.9; }
+.copy-feedback {
+  display: none; margin-top: 0.75rem;
+  font-size: 0.85rem; color: #7dd3c0; font-weight: 600;
+}
+
+/* === Affiche === */
+.affiche-section {
+  background: var(--creme-clair);
+  padding: 2.5rem 1.25rem;
+  text-align: center;
+}
+.affiche-section .section-sep { margin-bottom: 1.5rem; }
+.affiche-title {
+  font-family: var(--font-display); font-weight: 700;
+  font-size: 1.6rem; color: var(--bordeaux); margin-bottom: 1rem;
+}
+.affiche-img {
+  max-width: 360px;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 6px 24px rgba(58,46,36,0.18);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.affiche-img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 32px rgba(58,46,36,0.25);
+}
+
+/* === Partenaires === */
+.partenaires { background: var(--creme); padding: 2.5rem 1.25rem; text-align: center; }
+.partenaires-title { font-family: var(--font-display); font-weight: 700; font-size: 1.6rem; color: var(--bordeaux); margin-bottom: 1rem; }
+.partenaires-list { font-size: 0.9rem; line-height: 1.8; max-width: 580px; margin: 0 auto 1rem; color: var(--brun); }
+.partenaires-porteurs { font-family: var(--font-serif); font-style: italic; font-size: 0.9rem; color: var(--teal); margin-bottom: 1.5rem; }
+.contact-link {
+  display: inline-block; font-weight: 600; font-size: 0.95rem;
+  color: var(--teal-clair); padding: 0.5rem 1rem;
+  border: 2px solid var(--teal-clair); border-radius: 8px;
+  transition: background 0.2s, color 0.2s;
+}
+.contact-link:hover { background: var(--teal-clair); color: var(--blanc); text-decoration: none; }
+
+/* === Back to top === */
+.back-to-top {
+  display: inline-flex; align-items: center; gap: 0.3rem;
+  margin-top: 1.5rem;
+  font-family: var(--font-body); font-size: 0.8rem; font-weight: 600;
+  color: var(--teal-clair); opacity: 0.7;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+.back-to-top:hover { opacity: 1; text-decoration: none; }
+
+/* === Footer === */
+.site-footer { background: var(--teal-fonce); color: rgba(250,247,240,0.6); text-align: center; padding: 1.25rem; font-size: 0.8rem; }
+
+/* === Fade-in === */
+.fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
+.fade-in.visible { opacity: 1; transform: translateY(0); }
+
+/* === Tablet === */
+@media (min-width: 768px) {
+  :root { --header-h: 56px; }
+  .site-header { gap: 0.5rem; }
+  .site-header a { font-size: 0.9rem; padding: 0.4rem 1rem; }
+  .hero { min-height: 65vh; }
+  .hero-title { font-size: 3.8rem; }
+  .hero-edition { font-size: 1.5rem; }
+  .hero-tagline { font-size: 1.1rem; }
+  .section { padding: 4rem 2rem; }
+  .jour-label { font-size: 2.8rem; }
+  .affiche-img { max-width: 420px; }
+}
+
+/* === Desktop === */
+@media (min-width: 1200px) {
+  .hero-title { font-size: 4.4rem; }
+  .section { padding: 5rem 2rem; }
+  .section-inner { max-width: 800px; }
+}
+</style>
+</head>
+<body id="top">
+
+<header class="site-header" role="navigation" aria-label="Navigation par jour">
+  <a href="#expo" data-section="expo">Expo</a>
+  <span class="header-sep" aria-hidden="true">·</span>
+  <a href="#ven" data-section="ven">Vendredi</a>
+  <span class="header-sep" aria-hidden="true">·</span>
+  <a href="#sam" data-section="sam">Samedi</a>
+  <span class="header-sep" aria-hidden="true">·</span>
+  <a href="#dim" data-section="dim">Dimanche</a>
+</header>
+
+<!-- HERO -->
+<section class="hero" aria-label="Présentation du festival">
+  <picture>
+    <source type="image/webp"
+            srcset="images/hero-mur-480.webp 480w, images/hero-mur-800.webp 800w, images/hero-mur.webp 1204w"
+            sizes="100vw">
+    <img class="hero-img"
+         src="images/hero-mur.jpg"
+         srcset="images/hero-mur-480.jpg 480w, images/hero-mur-800.jpg 800w, images/hero-mur.jpg 1204w"
+         sizes="100vw"
+         alt="Ruelle pavée d'un village du sud, mur en pierre avec l'inscription peinte « Quand les murs parlent, les rues écoutent »"
+         width="1204" height="700" fetchpriority="high" decoding="async">
+  </picture>
+  <div class="hero-content">
+    <h1 class="hero-title">Murs en Poésies<br>à St Bo</h1>
+    <p class="hero-edition">Liberté·s</p>
+    <p class="hero-tagline">« Quand les murs parlent, les rues écoutent. »</p>
+    <div class="hero-info">
+      <span class="hero-date">27 — 29 mars 2026</span>
+      <span class="hero-lieu">Saint-Bauzille-de-Putois</span>
+    </div>
+  </div>
+</section>
+
+<!-- EXPO -->
+<section id="expo" class="section" aria-label="Exposition poétique">
+  <div class="section-inner">
+    <h2 class="jour-label fade-in">Du 28 mars au 12 avril</h2>
+    <p class="horaire-lieu fade-in">Expo poétique en plein air</p>
+    <p class="section-description fade-in">Les rues deviennent galerie. Poèmes d'habitants, textes d'auteurs — sur des supports qui vont du murmure minimaliste au grand format qui claque au vent.</p>
+    <picture class="fade-in" style="margin-top: 1rem;">
+      <source type="image/webp"
+              srcset="images/expo-poeme-mur-480.webp 480w, images/expo-poeme-mur-800.webp 800w, images/expo-poeme-mur.webp 1204w"
+              sizes="(min-width: 768px) 680px, calc(100vw - 2.5rem)">
+      <img class="section-img"
+           src="images/expo-poeme-mur.jpg"
+           srcset="images/expo-poeme-mur-480.jpg 480w, images/expo-poeme-mur-800.jpg 800w, images/expo-poeme-mur.jpg 1204w"
+           sizes="(min-width: 768px) 680px, calc(100vw - 2.5rem)"
+           alt="Mur en pierre dorée du village avec le titre du festival peint à la main en lettres teal"
+           width="1204" height="700" loading="lazy" decoding="async">
+    </picture>
+  </div>
+</section>
+
+<div class="section-sep" aria-hidden="true">· · ·</div>
+
+<!-- VENDREDI -->
+<section id="ven" class="section" aria-label="Programme du vendredi">
+  <div class="section-inner">
+    <h2 class="jour-label fade-in">Vendredi 27 mars</h2>
+    <p class="horaire-lieu fade-in">20 h · Café des Mouffettes</p>
+    <p class="section-description fade-in">La scène s'ouvre aux voix. Anaïs Vaillant et le Théâtre de l'Albarède donnent voix aux mots nés dans les ateliers d'écriture.</p>
+    <p class="section-description fade-in">Les vers récoltés resteront suspendus sur les murs du village, le temps que l'encre sèche.</p>
+    <picture class="fade-in" style="margin-top: 1rem;">
+      <source type="image/webp"
+              srcset="images/vendredi-lanternes-480.webp 480w, images/vendredi-lanternes-800.webp 800w, images/vendredi-lanternes.webp 1204w"
+              sizes="(min-width: 768px) 680px, calc(100vw - 2.5rem)">
+      <img class="section-img"
+           src="images/vendredi-lanternes.jpg"
+           srcset="images/vendredi-lanternes-480.jpg 480w, images/vendredi-lanternes-800.jpg 800w, images/vendredi-lanternes.jpg 1204w"
+           sizes="(min-width: 768px) 680px, calc(100vw - 2.5rem)"
+           alt="Façade chaleureuse du Café des Mouffettes avec guitare et terrasse"
+           width="1204" height="700" loading="lazy" decoding="async">
+    </picture>
+    <div class="pre-event fade-in">
+      <strong>21 mars</strong> — Les Mouffettes proposent un troc singulier : un café contre un poème.
+    </div>
+  </div>
+</section>
+
+<div class="section-sep" aria-hidden="true">· · ·</div>
+
+<!-- SAMEDI -->
+<section id="sam" class="section" aria-label="Programme du samedi">
+  <div class="section-inner">
+    <h2 class="jour-label fade-in">Samedi 28 mars</h2>
+    <p class="horaire-lieu fade-in">18 h · Place du Christ</p>
+    <p class="section-description fade-in">Peinture live avec Nomad expo, la fresque naît sous les yeux. Puis le village se met en marche — chorale, déclamations, musique — une déambulation théâtrale qui glisse de rue en rue jusqu'au plan d'eau, où l'Hérault accueille le final.</p>
+    <p class="section-detail fade-in">Autour des braseros, les saveurs voyagent aussi : le Vietnam avec Stéphane de l'Inconstant, Haïti avec Festa.</p>
+    <picture class="fade-in" style="margin-top: 1rem;">
+      <source type="image/webp"
+              srcset="images/samedi-deambulation-480.webp 480w, images/samedi-deambulation-800.webp 800w, images/samedi-deambulation.webp 1204w"
+              sizes="(min-width: 768px) 680px, calc(100vw - 2.5rem)">
+      <img class="section-img"
+           src="images/samedi-deambulation.jpg"
+           srcset="images/samedi-deambulation-480.jpg 480w, images/samedi-deambulation-800.jpg 800w, images/samedi-deambulation.jpg 1204w"
+           sizes="(min-width: 768px) 680px, calc(100vw - 2.5rem)"
+           alt="Vue aérienne du parcours de la déambulation théâtrale à travers les ruelles du village"
+           width="1204" height="700" loading="lazy" decoding="async">
+    </picture>
+  </div>
+</section>
+
+<div class="section-sep" aria-hidden="true">· · ·</div>
+
+<!-- DIMANCHE -->
+<section id="dim" class="section" aria-label="Programme du dimanche">
+  <div class="section-inner">
+    <div class="fade-in">
+      <h2 class="jour-label">Dimanche 29 mars</h2>
+      <p class="horaire-lieu">9 h · Dialogues de l'aube</p>
+      <p class="section-description">Rdv en bas de la rue du Piérou. Christelle (Cie De si De la), violoncelle en main, dessine un paysage sonore au fil de l'eau et du vent.</p>
+      <p class="section-detail">Prévoir des baskets et un coussin pour s'asseoir.</p>
+    </div>
+    <picture class="fade-in" style="margin-top: 1.25rem;">
+      <source type="image/webp"
+              srcset="images/dimanche-aube-480.webp 480w, images/dimanche-aube-800.webp 800w, images/dimanche-aube.webp 1204w"
+              sizes="(min-width: 768px) 680px, calc(100vw - 2.5rem)">
+      <img class="section-img"
+           src="images/dimanche-aube.jpg"
+           srcset="images/dimanche-aube-480.jpg 480w, images/dimanche-aube-800.jpg 800w, images/dimanche-aube.jpg 1204w"
+           sizes="(min-width: 768px) 680px, calc(100vw - 2.5rem)"
+           alt="Violoncelliste de la Cie De si De la jouant en pleine nature dans la lumière de l'aube"
+           width="1204" height="700" loading="lazy" decoding="async">
+    </picture>
+    <div class="encart-atelier fade-in" style="margin-top: 2rem;">
+      <p class="horaire-lieu">16 h · Café des Mouffettes</p>
+      <p class="section-description" style="margin-bottom: 0.25rem;">Restitution des ateliers d'écriture de Julie Kpéré, Dokaf et Cie Katharsis sur le thème de la <em>Divagation</em>, une parole au fil de l'eau. Remous garantis. Éclaboussures comprises.</p>
+      <a class="section-link" href="https://lesmouffettes.fr/index.php/event/atelier-ecriture-avec-julie-kpere/" target="_blank" rel="noopener">Plus d'infos sur les ateliers ↗</a>
+    </div>
+    <picture class="fade-in" style="margin-top: 1.25rem;">
+      <source type="image/webp"
+              srcset="images/dimanche-divagation-480.webp 480w, images/dimanche-divagation-800.webp 800w, images/dimanche-divagation.webp 1204w"
+              sizes="(min-width: 768px) 680px, calc(100vw - 2.5rem)">
+      <img class="section-img"
+           src="images/dimanche-divagation.jpg"
+           srcset="images/dimanche-divagation-480.jpg 480w, images/dimanche-divagation-800.jpg 800w, images/dimanche-divagation.jpg 1204w"
+           sizes="(min-width: 768px) 680px, calc(100vw - 2.5rem)"
+           alt="Vue aérienne de l'Hérault — les mots « Une parole au fil de l'eau » flottent en lettres cursives à la surface de la rivière"
+           width="1204" height="700" loading="lazy" decoding="async">
+    </picture>
+  </div>
+</section>
+
+<!-- PARTAGE -->
+<section class="partage" aria-label="Partager l'événement">
+  <p class="partage-title">Faites passer le mot</p>
+  <p class="partage-sub">Partagez le festival avec vos proches</p>
+  <div class="partage-buttons">
+    <a class="btn-share"
+       href="https://wa.me/?text=Murs%20en%20Po%C3%A9sies%20%C3%A0%20St%20Bo%20%E2%80%94%20Libert%C3%A9%C2%B7s%20%F0%9F%8E%AD%0A27-29%20mars%202026%20%C2%B7%20Saint-Bauzille-de-Putois%0Ahttps%3A%2F%2Fprojectpulse-source.github.io%2Fmursenpoesies%2F"
+       target="_blank" rel="noopener" aria-label="Partager sur WhatsApp">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      WhatsApp
+    </a>
+    <a class="btn-share"
+       href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fprojectpulse-source.github.io%2Fmursenpoesies%2F"
+       target="_blank" rel="noopener" aria-label="Partager sur Facebook">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+      Facebook
+    </a>
+    <button class="btn-share" id="btnCopy" onclick="copyLink()" aria-label="Copier le lien">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+      <span id="copyLabel">Copier le lien</span>
+    </button>
+  </div>
+  <p class="copy-feedback" id="copyFeedback">✓ Lien copié !</p>
+</section>
+
+<!-- AFFICHE -->
+<section class="affiche-section fade-in" aria-label="Affiche du festival">
+  <div class="section-sep" aria-hidden="true">· · ·</div>
+  <p class="affiche-title">L'affiche</p>
+  <img class="affiche-img"
+       src="images/affiche-festival-600.jpg"
+       srcset="images/affiche-festival-600.jpg 600w, images/affiche-festival.jpg 1386w"
+       sizes="(min-width: 768px) 420px, 320px"
+       alt="Affiche du festival Murs en Poésies à St Bo — Liberté·s, illustrée d'une colombe colorée et du programme résumé"
+       width="600" height="855"
+       loading="lazy" decoding="async">
+</section>
+
+<!-- PARTENAIRES -->
+<section class="partenaires" aria-label="Partenaires et contact">
+  <p class="partenaires-title">Merci à celles et ceux qui font vivre cette édition</p>
+  <p class="partenaires-list">
+    Les Mouffettes · La Badiane · Le Sens des Arts · Les Amis des Beaux-Arts · Lo Publiaire · La Pensée Vagabonde · Capteur de Talents · Les Guêpières · L'Aire de Famille · L'École du Thaurac · Nomad expo · Cie De si De la
+  </p>
+  <p class="partenaires-list">Aux habitants-poètes, aux bénévoles, et à la municipalité.</p>
+  <p class="partenaires-porteurs">La Pensée Vagabonde porte le projet, Capteur de Talents le coordonne.</p>
+  <a class="contact-link" href="mailto:mursenpoesies.stbo@gmail.com">mursenpoesies.stbo@gmail.com</a>
+  <br>
+  <a href="#top" class="back-to-top" aria-label="Retour en haut">↑ Haut de page</a>
+</section>
+
+<footer class="site-footer">Murs en Poésies à St Bo — Liberté·s · 2026</footer>
+
+<script>
+/* Fade-in on scroll */
+(function() {
+  var els = document.querySelectorAll('.fade-in');
+  if (!('IntersectionObserver' in window)) {
+    els.forEach(function(el) { el.classList.add('visible'); });
+    return;
+  }
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+  els.forEach(function(el) { observer.observe(el); });
+})();
+
+/* Active header section tracking */
+(function() {
+  var links = document.querySelectorAll('.site-header a[data-section]');
+  var sections = [];
+  links.forEach(function(link) {
+    var sec = document.getElementById(link.dataset.section);
+    if (sec) sections.push({ el: sec, link: link });
+  });
+  if (!sections.length || !('IntersectionObserver' in window)) return;
+
+  var sectionObs = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      var link = sections.find(function(s) { return s.el === entry.target; });
+      if (link) {
+        if (entry.isIntersecting) {
+          links.forEach(function(l) { l.classList.remove('active'); });
+          link.link.classList.add('active');
+        }
+      }
+    });
+  }, { threshold: 0, rootMargin: '-30% 0px -60% 0px' });
+
+  sections.forEach(function(s) { sectionObs.observe(s.el); });
+})();
+
+/* Copy link with button text feedback */
+function copyLink() {
+  var url = 'https://projectpulse-source.github.io/mursenpoesies/';
+  var label = document.getElementById('copyLabel');
+  var fb = document.getElementById('copyFeedback');
+
+  function onCopied() {
+    label.textContent = '✓ Copié !';
+    fb.style.display = 'block';
+    setTimeout(function() {
+      label.textContent = 'Copier le lien';
+      fb.style.display = 'none';
+    }, 2500);
+  }
+
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(url).then(onCopied);
+  } else {
+    var ta = document.createElement('textarea');
+    ta.value = url; ta.style.position = 'fixed'; ta.style.opacity = '0';
+    document.body.appendChild(ta); ta.select();
+    document.execCommand('copy'); document.body.removeChild(ta);
+    onCopied();
+  }
+}
+
+/* Smooth scroll for header anchors */
+document.querySelectorAll('.site-header a').forEach(function(a) {
+  a.addEventListener('click', function(e) {
+    var target = document.querySelector(this.getAttribute('href'));
+    if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+  });
+});
+</script>
+</body>
+</html>
