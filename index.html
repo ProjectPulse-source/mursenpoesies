@@ -97,10 +97,10 @@ a:focus-visible { outline: 2px solid var(--teal-clair); outline-offset: 2px; }
 }
 .site-header a {
   color: var(--creme-clair); font-family: var(--font-body);
-  font-weight: 600; font-size: 0.8rem;
+  font-weight: 600; font-size: 0.85rem;
   padding: 0.4rem 0.6rem; border-radius: 4px;
   transition: background 0.2s, opacity 0.2s; text-decoration: none; white-space: nowrap;
-  opacity: 0.7;
+  opacity: 0.85;
 }
 .site-header a:hover, .site-header a:focus { background: rgba(255,255,255,0.12); text-decoration: none; opacity: 1; }
 .site-header a.active { opacity: 1; background: rgba(255,255,255,0.1); }
@@ -353,6 +353,8 @@ a:focus-visible { outline: 2px solid var(--teal-clair); outline-offset: 2px; }
   <a href="#sam" data-section="sam">Samedi</a>
   <span class="header-sep" aria-hidden="true">·</span>
   <a href="#dim" data-section="dim">Dimanche</a>
+  <span class="header-sep" aria-hidden="true">·</span>
+  <a href="#partage" data-section="partage">Partager</a>
 </header>
 
 <!-- HERO -->
@@ -490,7 +492,7 @@ a:focus-visible { outline: 2px solid var(--teal-clair); outline-offset: 2px; }
 </section>
 
 <!-- PARTAGE -->
-<section class="partage" aria-label="Partager l'événement">
+<section id="partage" class="partage" aria-label="Partager l'événement">
   <p class="partage-title">Faites passer le mot</p>
   <p class="partage-sub">Partagez le festival avec vos proches</p>
   <div class="partage-buttons">
